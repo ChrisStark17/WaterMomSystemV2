@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_datos2">
+
+        <TextView
+            android:id="@+id/textViewSurveyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encuesta sobre el uso del agua"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuenta con una cisterna?"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewSurveyTitle"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion1"
+            app:layout_constraintTop_toBottomOf="@id/textViewQuestion1">
+
+            <RadioButton
+                android:id="@+id/radioButtonYesQuestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Sí" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNoQuestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuenta con un tanque de almacenamiento de agua?"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion1"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion1"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion2"
+            app:layout_constraintTop_toBottomOf="@id/textViewQuestion2">
+
+            <RadioButton
+                android:id="@+id/radioButtonYesQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Sí" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNoQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Realizan tandeo en el área donde habita?"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion1"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion2"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion3"
+            app:layout_constraintTop_toBottomOf="@id/textViewQuestion3">
+
+            <RadioButton
+                android:id="@+id/radioButtonYesQuestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Sí" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNoQuestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ha experimentado escasez de agua?"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion1"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion3"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion4"
+            app:layout_constraintTop_toBottomOf="@id/textViewQuestion4">
+
+            <RadioButton
+                android:id="@+id/radioButtonYesQuestion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Sí" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNoQuestion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Está interesado en recibir notificaciones sobre sugerencias de cómo aprovechar mejor el agua?"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion1"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion4"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textViewQuestion5"
+            app:layout_constraintTop_toBottomOf="@id/textViewQuestion5">
+
+            <RadioButton
+                android:id="@+id/radioButtonYesQuestion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Sí" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNoQuestion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Agregar más preguntas aquí si es necesario -->
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/cyan"
+            android:fontFamily="sans-serif-medium"
+            android:text="Enviar respuestas"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
