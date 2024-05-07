@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.HistorialActivity
 import com.example.wabu.databinding.ActivityMainBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -59,7 +58,6 @@ class MainActivity : AppCompatActivity() {
         val btn: Button = findViewById(R.id.btn_historial)
         btn.setOnClickListener {
             val intent = Intent(this, HistorialActivity::class.java)
-            intent.putExtra("historialDatos", ArrayList(historialDatos))
             startActivity(intent)
         }
 

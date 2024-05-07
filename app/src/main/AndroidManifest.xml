@@ -15,23 +15,20 @@
         android:theme="@style/Theme.Wabu"
         tools:targetApi="31">
         <activity
-            android:name="com.HistorialAdapter"
+            android:name=".HistorialActivity"
             android:exported="false" />
         <activity
-            android:name="com.HistorialActivity"
+            android:name=".EncuestaActivity"
             android:exported="false" />
         <activity
-            android:name="com.EncuestaActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.RegisterActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
             tools:ignore="MissingClass" />
         <activity
-            android:name="com.MainActivity2"
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
